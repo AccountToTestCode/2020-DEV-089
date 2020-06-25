@@ -13,13 +13,10 @@ class ViewController: UIViewController {
     @IBOutlet weak var label: UILabel!
     
     @IBAction func action(_ sender: UIButton) {
-        guard !sender.isSelected  else {
+        guard let imageName = game.getImage(sender.tag) else {
             return
         }
-        sender.isSelected = true
-        
-        sender.setImage(UIImage(named: game.getImage(sender.tag)), for: .selected)
-
+        sender.setImage(UIImage(named: imageName), for: .normal)
     }
     
     
