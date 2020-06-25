@@ -8,7 +8,7 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    var playerOne = true
+    var game = Game()
     
     @IBAction func action(_ sender: UIButton) {
         guard !sender.isSelected  else {
@@ -16,14 +16,9 @@ class ViewController: UIViewController {
         }
         sender.isSelected = true
         
-        if (playerOne) {
-            sender.setImage(UIImage(named: "cross"), for: .selected)
-        }
-        else {
-            sender.setImage(UIImage(named: "circle"), for: .selected)
-        }
+        game.setImage(sender)
         
-        playerOne = !playerOne
+
     }
     
     override func viewDidLoad() {

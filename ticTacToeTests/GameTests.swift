@@ -1,13 +1,14 @@
 //
-//  ticTacToeTests.swift
+//  GameTests.swift
 //  ticTacToeTests
 //
 //
 
 import XCTest
-@testable import ticTacToe
 
-class ticTacToeTests: XCTestCase {
+class GameTests: XCTestCase {
+    
+    
 
     override func setUp() {
         // Put setup code here. This method is called before the invocation of each test method in the class.
