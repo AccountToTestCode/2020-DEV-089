@@ -13,7 +13,8 @@
 		AACB729624A4A82000D4D9E1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AACB729424A4A82000D4D9E1 /* Main.storyboard */; };
 		AACB729824A4A82300D4D9E1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AACB729724A4A82300D4D9E1 /* Assets.xcassets */; };
 		AACB729B24A4A82300D4D9E1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AACB729924A4A82300D4D9E1 /* LaunchScreen.storyboard */; };
-		AACB72A624A4A82400D4D9E1 /* ticTacToeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AACB72A524A4A82400D4D9E1 /* ticTacToeTests.swift */; };
+		AACB72B124A4B27300D4D9E1 /* GameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AACB72B024A4B27300D4D9E1 /* GameTests.swift */; };
+		AACB72B324A4B41400D4D9E1 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = AACB72B224A4B41400D4D9E1 /* Game.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,8 +37,9 @@
 		AACB729A24A4A82300D4D9E1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AACB729C24A4A82300D4D9E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AACB72A124A4A82400D4D9E1 /* ticTacToeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ticTacToeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		AACB72A524A4A82400D4D9E1 /* ticTacToeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ticTacToeTests.swift; sourceTree = "<group>"; };
 		AACB72A724A4A82400D4D9E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AACB72B024A4B27300D4D9E1 /* GameTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameTests.swift; sourceTree = "<group>"; };
+		AACB72B224A4B41400D4D9E1 /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 		AACB728D24A4A82000D4D9E1 /* ticTacToe */ = {
 			isa = PBXGroup;
 			children = (
+				AACB72B524A4BD6200D4D9E1 /* models */,
 				AACB728E24A4A82000D4D9E1 /* AppDelegate.swift */,
 				AACB729024A4A82000D4D9E1 /* SceneDelegate.swift */,
 				AACB729224A4A82000D4D9E1 /* ViewController.swift */,
@@ -93,10 +96,18 @@
 		AACB72A424A4A82400D4D9E1 /* ticTacToeTests */ = {
 			isa = PBXGroup;
 			children = (
-				AACB72A524A4A82400D4D9E1 /* ticTacToeTests.swift */,
 				AACB72A724A4A82400D4D9E1 /* Info.plist */,
+				AACB72B024A4B27300D4D9E1 /* GameTests.swift */,
 			);
 			path = ticTacToeTests;
+			sourceTree = "<group>";
+		};
+		AACB72B524A4BD6200D4D9E1 /* models */ = {
+			isa = PBXGroup;
+			children = (
+				AACB72B224A4B41400D4D9E1 /* Game.swift */,
+			);
+			path = models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -201,6 +212,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AACB729324A4A82000D4D9E1 /* ViewController.swift in Sources */,
+				AACB72B324A4B41400D4D9E1 /* Game.swift in Sources */,
 				AACB728F24A4A82000D4D9E1 /* AppDelegate.swift in Sources */,
 				AACB729124A4A82000D4D9E1 /* SceneDelegate.swift in Sources */,
 			);
@@ -210,7 +222,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AACB72A624A4A82400D4D9E1 /* ticTacToeTests.swift in Sources */,
+				AACB72B124A4B27300D4D9E1 /* GameTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
