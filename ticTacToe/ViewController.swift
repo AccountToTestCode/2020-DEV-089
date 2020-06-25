@@ -10,6 +10,8 @@ class ViewController: UIViewController {
     
     var game = Game()
     
+    @IBOutlet weak var label: UILabel!
+    
     @IBAction func action(_ sender: UIButton) {
         guard !sender.isSelected  else {
             return
@@ -19,6 +21,7 @@ class ViewController: UIViewController {
         sender.setImage(UIImage(named: game.getImage(sender.tag)), for: .selected)
 
     }
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
