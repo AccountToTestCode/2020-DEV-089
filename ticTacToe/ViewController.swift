@@ -16,8 +16,7 @@ class ViewController: UIViewController {
         }
         sender.isSelected = true
         
-        game.setImage(sender)
-        
+        sender.setImage(UIImage(named: game.getImage(sender.tag)), for: .selected)
 
     }
     

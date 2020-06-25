@@ -81,7 +81,7 @@
 		AACB728D24A4A82000D4D9E1 /* ticTacToe */ = {
 			isa = PBXGroup;
 			children = (
-				AACB72B224A4B41400D4D9E1 /* Game.swift */,
+				AACB72B524A4BD6200D4D9E1 /* models */,
 				AACB728E24A4A82000D4D9E1 /* AppDelegate.swift */,
 				AACB729024A4A82000D4D9E1 /* SceneDelegate.swift */,
 				AACB729224A4A82000D4D9E1 /* ViewController.swift */,
@@ -100,6 +100,14 @@
 				AACB72B024A4B27300D4D9E1 /* GameTests.swift */,
 			);
 			path = ticTacToeTests;
+			sourceTree = "<group>";
+		};
+		AACB72B524A4BD6200D4D9E1 /* models */ = {
+			isa = PBXGroup;
+			children = (
+				AACB72B224A4B41400D4D9E1 /* Game.swift */,
+			);
+			path = models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
