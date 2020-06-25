@@ -20,4 +20,17 @@ class GameTests: XCTestCase {
             XCTAssertNil(game.getImage(tag))
         }
     }
+    
+    func testSetWinner() {
+        let game = Game()
+        for combo in game.winningCombos {
+            if (game.gameState[combo[0]] != 0 && game.gameState[combo[0]] ==  game.gameState[combo[1]] &&  game.gameState[combo[1]] ==  game.gameState[combo[2]] ) {
+                XCTAssertEqual(game.isActive, false)
+            }
+            if (game.gameState[combo[0]] == 1) {
+                XCTAssertEqual(game.winner, game.activePlayer)
+            }
+        }
+    }
+    
 }

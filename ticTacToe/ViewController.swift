@@ -17,6 +17,7 @@ class ViewController: UIViewController {
             return
         }
         sender.setImage(UIImage(named: imageName), for: .normal)
+        game.setWinner()
     }
     
     

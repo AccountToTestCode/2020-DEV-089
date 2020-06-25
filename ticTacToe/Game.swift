@@ -7,10 +7,11 @@
 import Foundation
 
 class Game {
-    private var activePlayer: Int = 1
-    private var isActive: Bool = true
-    private var gameState: Array = [0, 0, 0, 0, 0, 0, 0, 0, 0]
-    private let winningCombos = [[1,2,3], [4,5,6], [7,8,9], [1,4,7], [2,5,8], [3,6,9], [1,5,9], [3,5,7]]
+    var activePlayer: Int = 1
+    var isActive: Bool = true
+    var winner: Int = 0
+    var gameState: Array = [0, 0, 0, 0, 0, 0, 0, 0, 0]
+    let winningCombos = [[0, 1, 2], [3, 4, 5], [6, 7, 8], [0, 3, 6], [1, 4, 7], [2, 5, 8], [0, 4, 8], [2, 4, 6] ]
     
     func getImage(_ tag: Int) -> String? {
         guard gameState[tag-1] == 0  else {
@@ -29,6 +30,19 @@ class Game {
         return imageName
     }
     
+    func setWinner() {
+        for combo in winningCombos {
+            if (gameState[combo[0]] != 0 && gameState[combo[0]] == gameState[combo[1]] && gameState[combo[1]] ==  gameState[combo[2]] ) {
+                isActive = false
+            }
+            if (gameState[combo[0]] == 1) {
+                winner = 1
+            } else {
+                winner = 2
+            }
+            
+        }
+    }
     
     private func setGameState(_ tag: Int) {
         if (gameState[tag-1] == 0 && isActive == true) {
