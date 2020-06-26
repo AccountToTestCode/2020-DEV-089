@@ -95,10 +95,10 @@
                                     </stackView>
                                 </subviews>
                             </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zrd-sc-6bt">
-                                <rect key="frame" x="16" y="138" width="343" height="49"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zrd-sc-6bt">
+                                <rect key="frame" x="16" y="138.66666666666666" width="343" height="49"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" priority="250" constant="49" id="LKj-K3-9Wc"/>
+                                    <constraint firstAttribute="height" constant="49" id="LKj-K3-9Wc"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="26"/>
                                 <nil key="textColor"/>
@@ -109,7 +109,7 @@
                         <constraints>
                             <constraint firstItem="KUf-Ka-WpJ" firstAttribute="height" relation="lessThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="height" id="4zY-GX-XVa"/>
                             <constraint firstItem="KUf-Ka-WpJ" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="DD6-ne-kTH"/>
-                            <constraint firstItem="KUf-Ka-WpJ" firstAttribute="top" secondItem="zrd-sc-6bt" secondAttribute="bottom" constant="31.666666666666629" id="Exb-B0-Hav"/>
+                            <constraint firstItem="KUf-Ka-WpJ" firstAttribute="top" relation="greaterThanOrEqual" secondItem="zrd-sc-6bt" secondAttribute="bottom" constant="20" id="Exb-B0-Hav"/>
                             <constraint firstItem="cNL-Iz-FFv" firstAttribute="leading" secondItem="KUf-Ka-WpJ" secondAttribute="leading" id="FN8-1v-JTz"/>
                             <constraint firstItem="zrd-sc-6bt" firstAttribute="centerX" secondItem="cNL-Iz-FFv" secondAttribute="centerX" id="FtH-KC-6es"/>
                             <constraint firstItem="cNL-Iz-FFv" firstAttribute="bottom" secondItem="KUf-Ka-WpJ" secondAttribute="bottom" id="PgR-n1-OM2"/>
@@ -118,7 +118,7 @@
                             <constraint firstItem="cNL-Iz-FFv" firstAttribute="trailing" secondItem="KUf-Ka-WpJ" secondAttribute="trailing" id="fvz-rz-Mzb"/>
                             <constraint firstItem="KUf-Ka-WpJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="iao-F5-DI5"/>
                             <constraint firstItem="KUf-Ka-WpJ" firstAttribute="width" relation="lessThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="width" id="jKA-cZ-8Yr"/>
-                            <constraint firstItem="zrd-sc-6bt" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="94" id="ugD-pb-VeO"/>
+                            <constraint firstItem="zrd-sc-6bt" firstAttribute="top" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="40" id="ugD-pb-VeO"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
