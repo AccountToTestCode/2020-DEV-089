@@ -33,7 +33,6 @@ class GameTests: XCTestCase {
                     XCTAssertEqual(game.winner, 2)
                 }
             }
-
         }
     }
     

@@ -49,7 +49,7 @@ class Game {
     func getWinningMessage() -> String {
         var message = ""
         guard !isActive else {
-            return message 
+            return message
         }
         if (winner == 1) {
             message = "Player One has won the game"
