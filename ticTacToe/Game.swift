@@ -34,13 +34,12 @@ class Game {
         for combo in winningCombos {
             if (gameState[combo[0]] != 0 && gameState[combo[0]] == gameState[combo[1]] && gameState[combo[1]] ==  gameState[combo[2]] ) {
                 isActive = false
+                if (gameState[combo[0]] == 1) {
+                    winner = 1
+                } else {
+                    winner = 2
+                }
             }
-            if (gameState[combo[0]] == 1) {
-                winner = 1
-            } else {
-                winner = 2
-            }
-            
         }
     }
     
