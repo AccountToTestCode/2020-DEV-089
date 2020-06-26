@@ -19,6 +19,7 @@ class ViewController: UIViewController {
         sender.setImage(UIImage(named: imageName), for: .normal)
         
         game.setWinner()
+        game.gameEnded()
         
         label.text = game.getWinningMessage()
 

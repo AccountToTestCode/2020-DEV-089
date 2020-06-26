@@ -46,6 +46,12 @@ class Game {
         }
     }
     
+    func gameEnded() {
+        if (!gameState.contains(0)) {
+            isActive = false
+        }
+    }
+    
     func getWinningMessage() -> String {
         var message = ""
         guard !isActive else {

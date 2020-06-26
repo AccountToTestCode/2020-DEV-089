@@ -22,29 +22,4 @@ class GameTests: XCTestCase {
         }
     }
     
-    func testSetWinner() {
-        let game = Game()
-        for combo in game.winningCombos {
-            if (game.gameState[combo[0]] != 0 && game.gameState[combo[0]] ==  game.gameState[combo[1]] &&  game.gameState[combo[1]] ==  game.gameState[combo[2]] ) {
-                XCTAssertEqual(game.isActive, false)
-                if (game.gameState[combo[0]] == 1) {
-                    XCTAssertEqual(game.winner, 1)
-                } else {
-                    XCTAssertEqual(game.winner, 2)
-                }
-            }
-        }
-    }
-    
-    func testGetWinningMessage() {
-        let game = Game()
-        if (game.winner == 1) {
-            XCTAssert(true, "Player One has won the game")
-        } else if (game.winner == 2) {
-            XCTAssert(true, "Player Two has won the game")
-        } else {
-            XCTAssert(true, "It's a draw")
-        }
-    }
-    
 }
