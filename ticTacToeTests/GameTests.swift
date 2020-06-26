@@ -18,6 +18,7 @@ class GameTests: XCTestCase {
                 XCTAssertEqual(game.getImage(tag), "cross")
             }
             XCTAssertNil(game.getImage(tag))
+            XCTAssertEqual(game.isActive, true)
         }
     }
     
