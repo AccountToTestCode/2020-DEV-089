@@ -36,4 +36,15 @@ class GameTests: XCTestCase {
         }
     }
     
+    func testGetWinningMessage() {
+        let game = Game()
+        if (game.winner == 1) {
+            XCTAssert(true, "Player One has won the game")
+        } else if (game.winner == 2) {
+            XCTAssert(true, "Player Two has won the game")
+        } else {
+            XCTAssert(true, "It's a draw")
+        }
+    }
+    
 }

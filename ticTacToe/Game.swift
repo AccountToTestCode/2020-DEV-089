@@ -53,8 +53,10 @@ class Game {
         }
         if (winner == 1) {
             message = "Player One has won the game"
-        } else {
+        } else if (winner == 2) {
             message = "Player Two has won the game"
+        } else {
+            message = "It's a draw"
         }
         isActive = false
         return message
