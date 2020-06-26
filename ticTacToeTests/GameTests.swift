@@ -4,30 +4,36 @@
 //
 //
 
+@testable import ticTacToe
 import XCTest
 
 class GameTests: XCTestCase {
     
-    
-
-    override func setUp() {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
-    }
-
-    override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-    }
-
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-    }
-
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
+    func testGetImage() {
+        let game = Game()
+        for tag in 1...9 {
+            if (tag % 2 == 0) {
+                XCTAssertEqual(game.getImage(tag), "circle")
+            } else {
+                XCTAssertEqual(game.getImage(tag), "cross")
+            }
+            XCTAssertNil(game.getImage(tag))
         }
     }
+    
+    func testSetWinner() {
+        let game = Game()
+        for combo in game.winningCombos {
+            if (game.gameState[combo[0]] != 0 && game.gameState[combo[0]] ==  game.gameState[combo[1]] &&  game.gameState[combo[1]] ==  game.gameState[combo[2]] ) {
+                XCTAssertEqual(game.isActive, false)
+                if (game.gameState[combo[0]] == 1) {
+                    XCTAssertEqual(game.winner, 1)
+                } else {
+                    XCTAssertEqual(game.winner, 2)
+                }
+            }
 
+        }
+    }
+    
 }
